@@ -1,0 +1,13 @@
+<?php
+$validUsername = "admin";
+$validPassword = "1234";
+
+$username = readline("Enter username: ");
+$password = readline("Enter password: ");
+
+if ($username === $validUsername && $password === $validPassword) {
+    echo "Access Granted";
+} else {
+    echo "Access Denied";
+}
+?>
