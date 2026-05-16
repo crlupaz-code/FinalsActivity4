@@ -1,9 +1,13 @@
 <?php
-$number = readline("Enter a number: ");
+$grade = readline("Enter student's grade: ");
 
-if ($number > 0) {
-    echo "Positive number";
+if ($grade >= 90 && $grade <= 100) {
+    echo "Excellent";
+} elseif ($grade >= 80 && $grade <= 89) {
+    echo "Good";
+} elseif ($grade >= 70 && $grade <= 79) {
+    echo "Average";
 } else {
-    echo "Negative number";
+    echo "Failed";
 }
 ?>
