@@ -1,0 +1,14 @@
+<?php
+$age = readline("Enter your age: ");
+$citizenship = readline("Enter your citizenship: ");
+
+if ($age >= 18) {
+    if ($citizenship === "Filipino") {
+        echo "You are eligible to vote";
+    } else {
+        echo "You are not eligible to vote (citizenship requirement)";
+    }
+} else {
+    echo "You are not eligible to vote (age requirement)";
+}
+?>
