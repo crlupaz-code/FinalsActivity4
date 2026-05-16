@@ -1,0 +1,17 @@
+<?php
+$color = readline("Enter traffic light color (red, yellow, green): ");
+
+switch (strtolower($color)) {
+    case "red":
+        echo "Stop!";
+        break;
+    case "yellow":
+        echo "Ready to stop or proceed with caution.";
+        break;
+    case "green":
+        echo "Go!";
+        break;
+    default:
+        echo "Invalid color! Please enter red, yellow, or green.";
+}
+?>
